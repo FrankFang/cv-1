@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*::after {
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+
+#demo {
+  word-break: break-all;
+}
+
+#div1 {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+}
+
+#div1::before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+#div1::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+@media (max-width: 500px) {
+  #html {
+    height: 50vh;
+    overflow: auto;
+  }
+
+  #div1Wrapper {
+    height: 50vh;
+  }
+
+  #div1 {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
